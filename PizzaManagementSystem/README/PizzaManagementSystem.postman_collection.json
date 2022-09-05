@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "6419a0e1-e329-4f6f-9c42-7938a73606da",
+		"name": "PizzaManagementSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/api/Order/SaveNewOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\": \"Loris\",\r\n    \"details\": [\r\n        {\r\n            \"quantity\": 2, \r\n            \"fk_MenuItem\": 4\r\n        },\r\n        {\r\n            \"quantity\": 3, \r\n            \"fk_MenuItem\": 3\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Order/SaveNewOrder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Order",
+						"SaveNewOrder"
+					]
+				},
+				"description": "Chiamata per salvare un nuovo ordine sul DB "
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/Order/GetTodaysPendingOrders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Order/GetTodaysPendingOrders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Order",
+						"GetTodaysPendingOrders"
+					]
+				},
+				"description": "Chiamata per recuperare gli ordini del giorno non ancora completati"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/Order/MarkOrderAsDone/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Order/MarkOrderAsDone/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Order",
+						"MarkOrderAsDone",
+						"1"
+					]
+				},
+				"description": "Chiamata per impostare un particolare ordine come completato"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/menu/GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/menu/GetAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"menu",
+						"GetAll"
+					]
+				},
+				"description": "Chiamata per recuperare il menu completo"
+			},
+			"response": []
+		}
+	]
+}

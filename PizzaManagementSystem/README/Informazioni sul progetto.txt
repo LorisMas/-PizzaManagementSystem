@@ -1,0 +1,6 @@
+Il progetto è stato basato su .Net Core 3.1 e utilizza Entity Framework Core per la gestione del database.
+Prima di farlo partire bisogna creare il db sql da utlizzare, di default ne usa uno locale ma volendo basta cambiare le stringhe di connessione nei 
+file appsettings.Development.json e runtimeconfig.template.json per puntare altrove. Per creare il db lanciare il comando "Update-Database" dalla 
+console di gestione dei pacchetti di Visual Studio selezionando come progetto di default il "PizzaManagementSystem.DAL".
+Nella stessa directory di questo file potete trovare delle chiamate eseguite con postman che puntano agli endpoint configurati.
+Il sistema prevede la possibilità di salvare un nuovo ordine, recuperare gli ordini del giorno non ancora completati e segnare un ordine come completato.

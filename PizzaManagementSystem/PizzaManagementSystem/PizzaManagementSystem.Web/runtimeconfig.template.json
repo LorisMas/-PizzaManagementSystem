@@ -1,0 +1,5 @@
+﻿{
+  "configProperties": {
+    "RuntimeConnectionString": "Data Source=(LocalDb)\\MSSQLLocalDB;Initial Catalog=PizzaManagementSystemDB;Integrated Security=True;MultipleActiveResultSets=true"
+  }
+}
